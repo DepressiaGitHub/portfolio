@@ -1,0 +1,41 @@
+.page-footer {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__title {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.page-footer__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.page-footer__contacts {
+  margin: 40px 0 40px;
+}
+
+.page-footer__contacts p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

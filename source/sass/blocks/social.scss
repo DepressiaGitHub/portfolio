@@ -1,0 +1,55 @@
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social li {
+  margin-right: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social__item {
+  color: white;
+  font-size: 12px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #e6e6e6;
+  border-radius: 50%;
+  display: block;
+
+  &:hover {
+    border: 3px solid #000000;
+    transition: 0.5s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item--headhunter {
+  background-image: url("../img/icon-hh.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__item--mail {
+  background-image: url("../img/icon-mail.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.social__item--phone {
+  background-image: url("../img/icon-phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
