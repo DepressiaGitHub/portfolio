@@ -102,21 +102,22 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 })
 
-// /*Собирает js файлы в один*/
-// gulp.task("alljs", function() {
-//   return gulp.src("source/js/*.js")
-//     .pipe(concat("all.js"))
-//     .pipe(gulp.dest("build/js"));
-// });
-
-/*Минимализирует и собирает js файлы в один*/
-gulp.task("alljs", function () {
-  return pipeline(
-    gulp.src("source/js/*.js"),
-    concat("all.js"),
-    gulp.dest("build/js")
-  );
+/*Собирает js файлы в один*/
+gulp.task("alljs", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(concat("all.js"))
+    .pipe(gulp.dest("build/js"));
 });
+
+// /*Минимализирует и собирает js файлы в один*/
+// gulp.task("alljs", function () {
+//   return pipeline(
+//     gulp.src("source/js/*.js"),
+//     uglify(),
+//     concat("all.js"),
+//     gulp.dest("build/js")
+//   );
+// });
 
 /*Копируем все файлы в build*/
 gulp.task("copy", function () {
