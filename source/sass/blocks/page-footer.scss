@@ -1,41 +1,136 @@
 .page-footer {
-  background-color: #ffffff;
   text-align: center;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
+  background-color: #293449;
+  color: #ffffff;
 }
 
 .page-footer__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-footer__contacts {
+  margin: 30px 0 20px;
+  order: 2;
+}
+
+.page-footer__call-me h3 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+}
+
+.page-footer__call-me a {
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: #d6001c;
+    transition: 0.3s;
+  }
 }
 
 .page-footer__title {
+  margin: 0;
   font-family: "Merriweather", serif;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 400;
   margin-bottom: 0;
 }
 
 .page-footer__slogan {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   font-weight: 400;
 }
 
-.page-footer__contacts {
-  margin: 40px 0 40px;
-}
-
-.page-footer__contacts p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .page-footer__container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    & > div {
+      width: 33.3%;
+    }
+  }
+
+  .page-footer__title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .page-footer__slogan {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .page-footer__contacts {
+    order: 0;
+  }
+
+  .page-footer__call-me h3 {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .page-footer__call-me a {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .page-footer__slogan {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .page-footer__call-me h3 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .page-footer__call-me a {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+/* dark-theme start */
+
+.dark-theme .page-footer {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.dark-theme .page-footer__call-me a {
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: #d6001c;
+    transition: 0.3s;
+  }
+}
+
+/* dark-theme end */

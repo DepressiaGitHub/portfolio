@@ -20,13 +20,18 @@
   font-size: 12px;
   width: 50px;
   height: 50px;
-  border: 3px solid #e6e6e6;
   border-radius: 50%;
   display: block;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+  opacity: 0.7;
 
-  &:hover {
-    border: 3px solid #000000;
-    transition: 0.5s;
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(214, 0, 28, 1);
+    transition: 0.3s;
+    opacity: 1;
   }
 
   &:active {
@@ -38,6 +43,7 @@
   background-image: url("../img/icon-hh.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .social__item--mail {
@@ -45,11 +51,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ffffff;
+  background-size: 70%;
 }
 
-.social__item--phone {
-  background-image: url("../img/icon-phone.svg");
+.social__item--github {
+  background-image: url("../img/icon-github.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ffffff;
+  background-size: 70%;
+}
+
+@media (min-width: $tablet-width) {
+  .social__item {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__item {
+    width: 50px;
+    height: 50px;
+  }
 }

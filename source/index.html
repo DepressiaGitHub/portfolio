@@ -9,21 +9,30 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Портфолио Александра Масленникова</title>
   </head>
-  <body>
+  <body class="page">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__container container">
         <p class="page-header__title">Александр Масленников</p>
         <p class="page-header__slogan">Вёрстка сайтов на HTML и CSS.</p>
-        <a class="page-header__link" href="https://ramenskoye.hh.ru/applicant/resumes/view?resume=3761098cff08330e7d0039ed1f7a6762426b56">Посмотреть резюме</a>
+        <div class="page-header__list">
+          <button class="page-header__item page-header__theme-button" type="button">Изменить тему</button>
+          <a class="page-header__item" href="https://ramenskoye.hh.ru/applicant/resumes/view?resume=3761098cff08330e7d0039ed1f7a6762426b56" target="blank">Посмотреть резюме</a>
+        </div>
       </div>
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Портфолио</h1>
       <section class="portfolio">
+        <svg class="portfolio__bg-triangle-white" version="1.0" xmlns="http://www.w3.org/2000/svg" width="1200" height="94.074" viewBox="0 0 1200 94.074">
+          <path fill="#fff" d="M1200 0H0v94.074z"/>
+        </svg>
         <h2 class="visually-hidden">Список портфолио</h2>
         <ul class="portfolio__list container">
           <li class="portfolio__item">
-            <a class="portfolio__link" href="technomart/index.html">
+            <a class="portfolio__link" href="technomart/index.html" target="blank">
               <img src="img/preview-1.jpg" alt="Превью проекта «Техномарт»">
             </a>
             <h3>Проект «Техномарт»</h3>
@@ -32,7 +41,7 @@
             <p>Фиксированная десктоп-версия, реализованы всплывающие модальные окна + карта.</p>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="pink/index.html">
+            <a class="portfolio__link" href="pink/index.html" target="blank">
               <img src="img/preview-2.jpg" alt="Превью проекта «Pink»">
             </a>
             <h3>Проект «Pink»</h3>
@@ -41,7 +50,7 @@
             <p>Адаптивная-вёрстка, реализованы всплывающие модальные окна.</p>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="keksobooking/index.html">
+            <a class="portfolio__link" href="keksobooking/index.html" target="blank">
               <img src="img/preview-3.jpg" alt="Превью проекта «Кексобукинг»">
             </a>
             <h3>Проект «Кексобукинг»</h3>
@@ -54,24 +63,29 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container container">
-        <div>
+        <div class="page-footer__copyright">
           <p class="page-footer__title">Александр Масленников</p>
           <p class="page-footer__slogan">HTML вёрстка и создание сайтов.</p>
         </div>
         <div class="page-footer__contacts">
           <ul class="page-footer__social social">
             <li>
-              <a class="social__item social__item--headhunter" href="https://ramenskoye.hh.ru/applicant/resumes/view?resume=3761098cff08330e7d0039ed1f7a6762426b56"></a>
+              <a class="social__item social__item--headhunter" href="https://ramenskoye.hh.ru/applicant/resumes/view?resume=3761098cff08330e7d0039ed1f7a6762426b56" target="blank"></a>
             </li>
             <li>
               <a class="social__item social__item--mail" href="mailto:cray86@mail.ru"></a>
             </li>
             <li>
-              <a class="social__item social__item--phone" href="tel:+79253662653"></a>
+              <a class="social__item social__item--github" href="https://github.com/DepressiaGitHub?tab=repositories" target="blank"></a>
             </li>
           </ul>
         </div>
+        <div class="page-footer__call-me">
+          <h3>Звоните:</h3>
+          <a href="tel:+79253662653">+7 (925) 366 26 53</a>
+        </div>
       </div>
     </footer>
+    <script src="js/all.js"></script>
   </body>
 </html>

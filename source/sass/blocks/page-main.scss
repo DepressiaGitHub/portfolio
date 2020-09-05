@@ -1,8 +1,16 @@
+.page-main {
+  padding-top: 1px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  position: relative;
+}
+
 .page-main__title {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 30px;
   font-weight: 300;
   text-align: center;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: $tablet-width) {
@@ -18,3 +26,15 @@
     line-height: 50px;
   }
 }
+
+/* dark-theme start */
+
+.dark-theme .page-main {
+  background-color: #909196;
+}
+
+.dark-theme .page-main__title {
+  color: #ffffff;
+}
+
+/* dark-theme end */
